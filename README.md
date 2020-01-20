@@ -1,1 +1,1 @@
-# eop-sample
+# eop-starter

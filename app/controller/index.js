@@ -6,11 +6,10 @@ class IndexController extends BaseController {
 	}
 
 	home(ctx) {
-		ctx.body = "hello this is index";
+		let text = this.service.index.getHome();
+		ctx.body = text;
 	}
 
 
 }
-module.exports = function (app) {
-	return new IndexController(app);
-};
+module.exports = IndexController;
